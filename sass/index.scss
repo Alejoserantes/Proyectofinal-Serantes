@@ -1,0 +1,177 @@
+body {
+    background: url("../img/FONDO.jpg");
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+  }
+  
+  * {
+    font-family: "Bebas Neue", cursive;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  /* Home */
+  main {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 15rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #482896;
+    cursor: pointer;
+  }
+  
+  main:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
+  
+  @font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+      format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
+  
+  h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(72, 189, 57);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+  }
+  
+  #introducción {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(../img/wall-animal-dog-pet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .título {
+    width: auto;
+      text-align: center;
+      color: black;
+      
+      font-size: 60px;
+      padding: 50px;
+     
+      margin-bottom: 500px;
+  }
+  
+  .catalogo {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .catalogo .imagen img {
+    width: 450px;
+    height: 470px;
+    border-radius: 30px;
+    transition: all 1s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .catalogo .imagen img:hover {
+    transform: rotate(5deg);
+  }
+  .catalogo .imagen {
+    margin: 15px;
+  }
+  .etiq {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+    color: blue;
+  }
+  .subtítulo {
+    font-size: 30px;
+    font-style: italic;
+  }
+  
+  
+  #galeria img{
+    width: 100%;
+    height: 250px;
+  }
+  
+  #galeria .col-lg-4{
+    padding: 25px;
+    margin: 0 !important;
+  }
+  
+  #galería img:hover{
+    border: 5px solid #f7f7f7
+  }
+  
+  
+
+
+
+
+
+
+   
+    @import 'quienessomos';
+    @import 'contacto';
+    @import 'sucursales';
+    @import 'footer ;'
+    
+
+    
+
+
+ 
+    
+
+

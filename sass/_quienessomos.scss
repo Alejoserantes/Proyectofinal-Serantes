@@ -1,0 +1,27 @@
+/* Página: "Quienes somos" */
+
+.nosotros-imagen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/fondo\ quienes\ somos.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nosotros-texto {
+  color: black;
+  text-align: center;
+  width: 50%;
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+.carousel-caption{
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+}
+
